@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+body {
+  font-family: "Lato", sans serif;
+  font-weight: 400;
+  line-height: 1.7;
+
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+/* typography  *************/
+.title {
+  color: #7ed56f;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  font-weight: 400;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s;
+  margin-bottom: 2.5rem;
+}
+
+/* Utitity **********/
+.text-center {
+  text-align: center !important;
+}
+
+/****************** Research */
+/* Cummunity */
+.community-service {
+  height: 42rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.community-service-text {
+  flex: 1;
+  margin-right: 5rem;
+}
+.community-service-image {
+  width: 30%;
+  object-fit: fit;
+}
+.community-service-image img {
+  width: 100%;
+}
+
+.cr-vm {
+  width: 100%;
+  margin-bottom: 8rem;
+  display: flex;
+  border-bottom: 1px solid #7777;
+}
+
+.cr-vm-overlay-1,
+.cr-vm-overlay-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cr-vm-overlay-1 {
+  height: 50rem;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.4) 45%
+    ),
+    url("../images/vission.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.cr-vm-overlay-2 {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.4) 45%
+    ),
+    url("../images/mission.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cr-vission,
+.cr-mission {
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.cr-vm-image {
+  height: 25rem;
+}
+.cr-vm-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fit;
+}
+.cr-principle-list {
+  width: 110rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-bottom: 1px solid #7777;
+  border-radius: 0px;
+  /* background-color: #f3f3f3; */
+  padding: 6rem;
+  box-shadow: 25px 25px 0px #5a5a5a, -25px -25px 0px #e0e0e0;
+}
