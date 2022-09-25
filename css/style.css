@@ -5,7 +5,10 @@
   padding: 0px;
   box-sizing: inherit;
 }
-
+:root {
+  --light-green: #7ed56f;
+  --dark-green: #28b485;
+}
 html {
   font-size: 62.5%;
 }
@@ -19,16 +22,16 @@ body {
   font-family: "Lato", sans serif;
   font-weight: 400;
   line-height: 1.7;
-
+  background-color: #f3f3f3;
   font-size: 1.6rem;
   box-sizing: border-box;
 }
 
 /* typography  *************/
 .title {
-  color: #7ed56f;
+  color: var(--light-green);
   text-transform: uppercase;
-  margin-bottom: 5rem;
+
   font-weight: 400;
   font-size: 5rem;
   text-align: center;
@@ -38,7 +41,11 @@ body {
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(
+    to right,
+    var(--light-green),
+    var(--dark-green)
+  );
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.1rem;
@@ -50,7 +57,12 @@ body {
 .text-center {
   text-align: center !important;
 }
-
+.margin-top {
+  margin-top: 2rem;
+}
+.margin-bottom {
+  margin-bottom: 5rem;
+}
 /****************** Research */
 /* Cummunity */
 .community-service {
@@ -135,4 +147,163 @@ body {
   /* background-color: #f3f3f3; */
   padding: 6rem;
   box-shadow: 25px 25px 0px #5a5a5a, -25px -25px 0px #e0e0e0;
+}
+
+/* ABOUT *******/
+.vission-con {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-green);
+}
+.vission-box {
+  height: 45rem;
+
+  width: 90%;
+  margin-top: 3rem;
+  background-image: linear-gradient(
+      105deg,
+      hsl(0, 0%, 100%) 0%,
+      hsl(0, 0%, 100%) 60%,
+      transparent 60%
+    ),
+    url("../images/vission.avif");
+
+  border-radius: 30px;
+}
+.vission-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vission-text {
+  width: 80%;
+}
+.vission-header {
+  display: flex;
+  height: 40rem;
+}
+.vm-text {
+  width: 50%;
+  padding: 0 2rem;
+}
+.vm-text a {
+  display: block;
+  color: var(--dark-green);
+}
+.vm-img {
+  width: 50%;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/mission-header.jpg.crdownload");
+  background-position: center;
+}
+/* Admission *********/
+.scholar-con {
+  display: flex;
+}
+.scholar {
+  width: 70%;
+}
+.scholar-list {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  list-style-position: inside;
+}
+.scholar-image {
+  width: 30%;
+}
+.scholar-image img {
+  width: 100%;
+}
+.scholar-part {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid gray;
+}
+
+.tuition {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tuition td,
+.tuition th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tuition tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tuition tr:hover {
+  background-color: #ddd;
+}
+
+.tuition th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Component *** */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  color: white;
+  background-color: var(--light-green);
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  outline: 1.5rem solid var(--light-green);
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+/* composition:hover composition__photo:not(:hover) { */
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
 }
