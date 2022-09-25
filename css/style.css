@@ -6,8 +6,10 @@
   box-sizing: inherit;
 }
 :root {
-  --light-green: #7ed56f;
-  --dark-green: #28b485;
+  /* --light-green: #7ed56f;
+  --dark-green: #28b485; */
+  --light-green: black;
+  --dark-green: black
 }
 html {
   font-size: 62.5%;
@@ -60,11 +62,17 @@ body {
 .margin-top {
   margin-top: 2rem;
 }
+.margin-top-2 {
+  margin-top: 5rem;
+}
 .margin-bottom {
   margin-bottom: 5rem;
 }
 .margin-bottom-x2 {
   margin-bottom: 7rem;
+}
+.margin-bottom-x5 {
+  margin-bottom: 10rem m !important;
 }
 /****************** Research */
 .community-service {
@@ -332,7 +340,216 @@ body {
   color: white;
 }
 
+/* Home  */
+
+.discover {
+  margin: 0rem auto;
+  margin-top: 5rem;
+}
+.discover > h1 {
+  font-size: 4rem;
+}
+.compositions {
+  width: 95%;
+  display: flex;
+  margin: 1rem auto;
+  padding: 2rem;
+  height: 70rem;
+}
+
+.compositions__left {
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 1), transparent),
+    url("../images/ast-mission.jpeg");
+  width: 50%;
+  background-size: fill;
+  background-position: center;
+  height: 100%;
+  margin-right: 2rem;
+  border-radius: 2rem;
+}
+.compositions__right {
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.6), transparent),
+    url("../images/law.jpeg");
+  width: 50%;
+  background-size: cover;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.compositions__left--info {
+  width: 30rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.compositions__left--info > h1 {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.compositions__left--info a,
+.compositions__left--info a:hover {
+  display: inline-block;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: none;
+  padding: 0.7rem 3rem;
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+.rent__now {
+  width: 95%;
+  margin: 4rem auto;
+  display: flex;
+  height: 40rem;
+}
+.rent__now__info {
+  width: 25rem;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.rent__now__info > h1 {
+  font-size: 4rem;
+}
+.rent__now__info a,
+.rent__now__info a:hover {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  font-size: 2rem;
+  background: black;
+  margin-top: 1rem;
+  color: white;
+}
+.rent__now__images {
+  flex: 1;
+  position: relative;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.images {
+  max-width: 35rem;
+  max-height: 25rem;
+  position: absolute;
+  border-radius: 3rem;
+}
+.image-1 {
+  top: 10%;
+  transform: rotate(-15deg);
+  z-index: 20;
+}
+.image-2 {
+  top: 15%;
+  left: 30%;
+  transform: rotate(-20deg);
+  z-index: 10;
+}
+.image-3 {
+  top: 8%;
+  right: -5rem;
+  transform: rotate(20deg);
+}
+
+.become__host {
+  height: 60rem;
+  background-image: linear-gradient(
+      -15deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/backgroud-vission.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.become__host > div {
+  width: 30rem;
+  height: 100%;
+  position: absolute;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.become__host > div > h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  color: white;
+}
+.become__host > div > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: white;
+  text-transform: none;
+  padding: 0.8rem 2rem;
+  color: black;
+}
+
+/* Academics  *****/
+.collages,
+.institutes,
+.schools {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.collage {
+  width: 30rem;
+  border: 1px solid gray;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 3rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+.collage:hover {
+  transform: scale(1.03);
+}
+.collage img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.collage-info {
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.collage-info h2 {
+  text-transform: capitalize;
+}
+.collage-info p {
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+.collage-content {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.collage-content p {
+  display: flex;
+}
+.collage-content img {
+  display: block;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
 /* Component *** */
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -342,6 +559,7 @@ body {
   margin-top: 2rem;
   text-decoration: none;
   border-radius: 50px;
+  border: none;
 }
 
 .composition {
@@ -383,4 +601,239 @@ body {
 /* composition:hover composition__photo:not(:hover) { */
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+/* banner  ****/
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px);
+}
+
+.banner {
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.427),
+      rgba(0, 0, 0, 0.41)
+    ),
+    url("../images/header-of-the-pages.jfif");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.banner__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.banner__logo {
+  height: 10.5rem;
+}
+.banner__text-box {
+  /* To center element and it be responsive */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  z-index: 100;
+}
+
+nav primary-navigation {
+  margin: 0 auto;
+  display: block;
+
+  padding: 120px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+ul li {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: arvo;
+}
+
+li a {
+  color: white;
+  font-size: 2rem;
+}
+
+li a:hover {
+  color: #3ca0e7;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.642);
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #3ca0e7;
+}
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* header */
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  animation: moveInRight 1s ease-out;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.btns,
+.btns:link,
+.btns:visited {
+  text-transform: uppercase;
+  background-color: white;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Footer css  */
+footer {
+  color: white;
+  background: black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.cards__item {
+  flex-basis: 20%;
+  margin: 5rem auto;
+  display: felx;
+}
+.cards__item > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 10rem;
+}
+
+.cards__item > div > a {
+  color: rgba(255, 255, 255, 0.652) !important;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+.cards__item > div > a:hover {
+  color: rgb(255, 255, 255) !important;
+  transform: scale(1.05);
 }
