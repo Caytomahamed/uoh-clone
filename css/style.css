@@ -67,7 +67,6 @@ body {
   margin-bottom: 7rem;
 }
 /****************** Research */
-/* Cummunity */
 .community-service {
   height: 42rem;
   width: 100%;
@@ -107,9 +106,10 @@ body {
   background-image: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(0, 0, 0, 0.4) 45%
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.9) 100%
     ),
-    url("../images/vission.avif");
+    url("../images/farm-vission.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -118,11 +118,13 @@ body {
   background-image: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(0, 0, 0, 0.4) 45%
+      transparent 30%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.9) 100%
     ),
-    url("../images/mission.avif");
+    url("../images/vission.avif");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 .cr-vission,
@@ -150,6 +152,42 @@ body {
   /* background-color: #f3f3f3; */
   padding: 6rem;
   box-shadow: 25px 25px 0px #5a5a5a, -25px -25px 0px #e0e0e0;
+}
+
+.fund {
+  display: flex;
+}
+.fund-research {
+  width: 80%;
+  margin-right: 5rem;
+}
+.fund-resource {
+  padding: 4rem;
+  margin-right: 4rem;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 19px 19px 0px #5a5a5a, -19px -19px 0px #ffffff;
+}
+
+.polacition {
+  border-bottom: 1px solid gray;
+}
+.polacition li {
+  list-style-type: circle;
+}
+.polacition-text {
+  padding: 4rem;
+  width: 90%;
+  /* background-color: wheat; */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../images/backgroud-vission.jpg");
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 50px;*/
+  box-shadow: 27px 27px 0px #5a5a5a;
 }
 
 /* ABOUT *******/
@@ -227,6 +265,19 @@ body {
     url("../images/mission-header.jpg.crdownload");
   background-position: center;
 }
+.senate-con {
+  display: flex;
+  width: 95%;
+}
+.senate-con ol {
+  width: 95%;
+  list-style-position: inside;
+}
+.senate-color {
+  flex: 1;
+  margin-left: 3rem;
+  background-color: var(--light-green);
+}
 /* Admission *********/
 .scholar-con {
   display: flex;
@@ -241,10 +292,13 @@ body {
 }
 .scholar-image {
   width: 30%;
+  height: 38rem;
+  border-radius: 50%;
+  background-image: url("../images/LOGO.png");
+  background-position: center;
+  background-size: cover;
 }
-.scholar-image img {
-  width: 100%;
-}
+
 .scholar-part {
   padding-bottom: 4rem;
   border-bottom: 1px solid gray;
