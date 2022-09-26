@@ -9,7 +9,7 @@
   /* --light-green: #7ed56f;
   --dark-green: #28b485; */
   --light-green: black;
-  --dark-green: black
+  --dark-green: black;
 }
 html {
   font-size: 62.5%;
@@ -37,6 +37,7 @@ body {
   font-weight: 400;
   font-size: 5rem;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .header {
@@ -72,7 +73,7 @@ body {
   margin-bottom: 7rem;
 }
 .margin-bottom-x5 {
-  margin-bottom: 10rem m !important;
+  margin-bottom: 10rem  !important;
 }
 /****************** Research */
 .community-service {
@@ -609,16 +610,19 @@ body {
 }
 
 .banner {
-  height: 85vh;
+  height: 55vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 0, 0, 0.427),
+      rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.41)
     ),
-    url("../images/header-of-the-pages.jfif");
+    url("../images/banner.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
+}
+.banner-header {
+  height: 85vh !important;
 }
 
 .banner__logo-box {

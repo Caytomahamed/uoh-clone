@@ -74,7 +74,7 @@ const makupGenerator = function (arr, element) {
         
         <div class="collage-info">
           <h2>${data.name}</h2>
-          <p class="paragraphy">${data.image}</p>
+          <p class="paragraphy">${data.description}</p>
           
         <div class="collage-content">
             <p class="paragraphy"><img src="./images/LOGO.png" alt="logo">University of Hargiesa </p>
@@ -109,6 +109,27 @@ const institutes = [
   },
 ];
 
+const schools = [
+  {
+    name: "Hargeisa School of Economics",
+    description:
+      "Deans Message Fun fact: if you’re a veterinarian you can also be a pediatrician a lot of the principles employed by veterinarians",
+    image: "../images/eco.jpeg",
+  },
+  {
+    name: "School Of Graduate Studies",
+    description:
+      "Deans Message Fun fact: if you’re a veterinarian you can also be a pediatrician a lot of the principles employed by veterinarians",
+    image: "../images/graduate.webp",
+  },
+  {
+    name: "handicrafts",
+    description:
+      "Deans Message Fun fact: if you’re a veterinarian you can also be a pediatrician a lot of the principles employed by veterinarians",
+    image: "../images/hand.jpeg",
+  },
+];
+
 instituteSection && makupGenerator(institutes, instituteSection);
 collagesSection && makupGenerator(collages, collagesSection);
-schoolSection && makupGenerator(school, schoolSection);
+schoolSection && makupGenerator(schools, schoolSection);
